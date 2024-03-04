@@ -169,13 +169,18 @@
       <div class="col l5 s12">
         <h5 class="cafesito-text">Info</h5>
         <ul>
-          <li class="itemListInfo">-<a class="cafesito-text" target="_blank" href="presentación Lemna Minor.pdf">Documento guia</a></li>
-          <li class="itemListInfo">-<a class="cafesito-text" target="_blank" href="Lemna Minor presentation (English).pdf">Guidance Document
+          <li class="itemListInfo">-<a class="cafesito-text" target="_blank"
+              href="presentación Lemna Minor.pdf">Documento guia</a></li>
+          <li class="itemListInfo">-<a class="cafesito-text" target="_blank"
+              href="Lemna Minor presentation (English).pdf">Guidance Document
               (English)</a></li>
-          <li class="itemListInfo">-<a class="cafesito-text" target="_blank" href="https://vaki.co/es/vaki/algae4human">Donaciones</a></li>
-          <li class="itemListInfo">-<a class="cafesito-text" href="#!">Cryptowallet: 0x44CBf94d7E6f225fa2E721d69092DB2403CB6CB9</a></li>
+          <li class="itemListInfo">-<a class="cafesito-text" target="_blank"
+              href="https://vaki.co/es/vaki/algae4human">Donaciones</a></li>
+          <li class="itemListInfo">-<a class="cafesito-text" href="#!">Cryptowallet:
+              0x44CBf94d7E6f225fa2E721d69092DB2403CB6CB9</a></li>
           <li class="itemListInfo">-<a class="cafesito-text" href="#!">Email: davasquezvega@gmail.com</a></li>
-          <li class="itemListInfo">-<a class="cafesito-text" target="_blank" href="https://wa.me/573161147580">Whatsapp: 3161147580</a></li>
+          <li class="itemListInfo">-<a class="cafesito-text" target="_blank" href="https://wa.me/573161147580">Whatsapp:
+              3161147580</a></li>
           <li class="itemListInfo">-<a class="cafesito-text" href="#!">San José d.C.(de Cúcuta) - Colombia</a></li>
         </ul>
       </div>
@@ -187,6 +192,25 @@
       </div>
     </div>
   </footer>
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <img src="covera.png" alt="Unsplashed background img 1">
+    </div>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.modal');
+      var instances = M.Modal.init(elems);
+      console.log(document.getElementById('index-banner'));
+
+      var indexBanner = document.getElementById('index-banner');
+      indexBanner.addEventListener('click', function() {
+        console.log('on click')
+        var instance = M.Modal.getInstance(document.getElementById('modal1'));
+        instance.open();
+      });
+    });
+  </script>
 
 
   <!--  Scripts-->

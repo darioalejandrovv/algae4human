@@ -71,3 +71,15 @@ p {
 footer.page-footer {
   margin: 0;
 }
+
+#modal1 {
+  overflow: hidden;
+  width: 60vw;
+}
+.modal-content {
+  width: 100%;
+  padding: 0 !important;
+}
+.modal-content > img {
+  width: 100%;
+}
